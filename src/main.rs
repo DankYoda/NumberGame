@@ -57,7 +57,7 @@ impl Default for GuessNumber {
         Self {
             message: String::from("Guess the secret number!"),
             guess: String::from("0"),
-            secret_number: rand::thread_rng().gen_range(1..=100),
+            secret_number: rand::rng().random_range(1..=100),
         }
     }
 }
